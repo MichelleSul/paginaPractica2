@@ -15,7 +15,7 @@ $Contenido="Producto: " . $Producto . "\nImporte: " .$Importe . "\nTalla: " . $T
 	$Telefono . "\nCorreo: " . $Correo . "\nDireccion: ". $Direccion . "\nCodigo Postal: " . $CodigoPostal;
 
 
-          mail(Destino,"PEDIDO: ",$Contenido);
+          mail($Destino,"PEDIDO: ",$Contenido);
 
           header("location:Gracias.html");
 	
